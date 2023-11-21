@@ -1,0 +1,28 @@
+<a href="/">Add Details</a>
+
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>age</td>
+        <td>Gender</td>
+        <td>Hobby</td>
+        <td>City</td>
+        <td>Image</td>
+        <td>Actions</td>
+    </tr>
+ <% for(var st of StData){ %>
+    <tr>
+        <td><%= st.name %></td>
+        <td><%= st.age %></td>
+        <td><%= st.gender %></td>
+        <td><%= st.hobby %></td>
+        <td><%= st.city %></td>
+        <td><img src="<%= st.adminImage %>"  height="100" /></td>
+        <td>
+            <a href="/deleteStudent/<%= st.id %>">delete</a> || 
+            <a href="/updateStudent/<%= st.id %>">Update</a>
+        </td>
+    </tr>
+    <% } %>
+</table>

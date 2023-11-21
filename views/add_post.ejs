@@ -1,0 +1,25 @@
+
+
+<a href="/post/viewPostDetails">View Post</a>
+<h1>Student Page</h1>
+
+<form method="post" action="/post/addPostData" enctype="multipart/form-data">
+    <table border="1" >
+        <tr>
+            <td>Enter Title</td>
+            <td><input type="text" name="title" /></td>
+        </tr>
+        <tr>
+            <td>Enter Content</td>
+            <td><textarea name="content"></textarea></td>
+        </tr>
+         <tr>
+            <td>Upload Image</td>
+            <td><input type="file" name="postImage" /></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td><input type="submit"  value="Add Post" /></td>
+        </tr>
+    </table>
+</form>
