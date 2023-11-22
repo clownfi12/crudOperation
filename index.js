@@ -9,9 +9,9 @@ const mongoose = require('mongoose');
 let succ =  mongoose.connect("mongodb+srv://clownfish156:clown156H@cluster0.kbl0wxq.mongodb.net/batch12",{
         useUnifiedTopology: true,
         useNewUrlParser: true
-    })
-    .then(() => console.log('Database connected.'))
-    .catch(err => console.log(err));
+})
+.then(() => console.log('Database connected.'))
+.catch(err => console.log(err));
 
 
 const path = require('path');
